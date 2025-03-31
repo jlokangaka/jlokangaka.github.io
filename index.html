@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<h2>Inventory Count</h2>
+<div class="container">
+    <label for="tp">Toilet Paper Packets</label>
+    <input type="number" oninput="changeColor(this)" id="tp" name="tp" style="position: absolute; left:200px"><br><br>
+    <label for="tissues">Tissue Boxes</label>
+    <input type="number" oninput="changeColor(this)" id="tissueBox" name="tissueBox" style="position: absolute; left:200px"><br><br>
+    <label for="extraSoftGuestHandTowel">Extra Soft Guest Hand Towel</label>
+    <input type="number" oninput="changeColor(this)" id="extraSoftGuestHandTowel" name="extraSoftGuestHandTowel" style="position: absolute; left:200px"><br><br>
+    <label for="tp">Hand Tissue Boxes</label>
+    <input type="number" oninput="changeColor(this)" id="handTissueBoxes" name="handTissueBoxes" style="position: absolute; left:200px"><br><br>
+    <label for="tp">Water Bottles Boxes</label>
+    <input type="number" oninput="changeColor(this)" id="waterBottlesBoxes" name="waterBottlesBoxes" style="position: absolute; left:200px"><br><br>
+    <label for="tp">Glove Boxes</label>
+    <input type="number" oninput="changeColor(this)" id="gloveBoxes" name="gloveBoxes" style="position: absolute; left:200px"><br><br>
+    <label for="tp">Bathroom Cleaner Bottles</label>
+    <input type="number" oninput="changeColor(this)" id="bathroomCleanerBottles" name="bathroomCleanerBottles" style="position: absolute; left:200px"><br><br>
+    <label for="tp">Disinfectant Bottles</label>
+    <input type="number" oninput="changeColor(this)" id="disinfectantBottles" name="disinfectantBottles" style="position: absolute; left:200px"><br><br>
+    <label for="tp">Glass Cleaner Bottles</label>
+    <input type="number" oninput="changeColor(this)" id="glassCleanerBottles" name="glassCleanerBottles" style="position: absolute; left:200px"><br><br>
+    <label for="tp">Fresh Air Bottles</label>
+    <input type="number" oninput="changeColor(this)" id="freshAirBottles" name="freshAirBottles" style="position: absolute; left:200px"><br><br>
+    <label for="tp">Hand & Body Wash</label>
+    <input type="number" oninput="changeColor(this)" id="handAndBodyWash" name="handAndBodyWash" style="position: absolute; left:200px"><br><br>
+</div>
+
+<script>
+    function changeColor(input) {
+        let value = parseInt(input.value);
+        
+        if (value < 6) {
+            input.style.backgroundColor = "red";
+        } else if (value >= 6 && value <= 8) {
+            input.style.backgroundColor = "yellow";
+        } else if (value > 8) {
+            input.style.backgroundColor = "green";
+        } else {
+            input.style.backgroundColor = "white"; // Default color
+        }
+    }
+</script>
+
+</body>
+
+
+</html>
